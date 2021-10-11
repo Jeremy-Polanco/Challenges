@@ -36,8 +36,7 @@ html{
 
 body{
     width: 100vw;
-    height: 100vh;
-    margin: 0;
+    height: 120vh;
     background: url(./images/pattern-background-desktop.svg);
     background-size:contain; 
     background-repeat: no-repeat;
@@ -84,7 +83,7 @@ body{
     align-items: flex-start;
     text-align: center;
     font-size: var(--fontSize);
-    font-weight: var(--fontWeightNormal);
+    font-weight: var(--fontWeightbold);
     margin: 0 auto;
     color: var(--desaturatedBlue);
     position: relative;
@@ -167,7 +166,7 @@ body{
 }
 
 @media(max-width: 700px){
-    .image_summary{
+    .body{
         background: url(./images/pattern-background-mobile.svg);
     }
 }
