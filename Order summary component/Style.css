@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*,*::after, 
+*::before{
+    box-sizing: border-box;
+}
+
+:root{
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+    --fontSize: 16px;
+    --fontWeightNormal: 500;
+    --fontWeightBold: 700;
+    --fontWeightBolder: 900;
+
+}
+
+body{
+   font-family: "Red Hat Display", sans-serif;
+
+}
+
+html{
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeightNormal);
+}
+
+body{
+    width: 100vw;
+    height: 120vh;
+    background: url(./images/pattern-background-desktop.svg);
+    background-size:contain; 
+    background-repeat: no-repeat;
+    background-color: var(--paleBlue);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.wrapper{
+    height: 682px;
+    width: 452px;
+    background: white;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns:  1fr;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0px 16px 30px -7px var(--desaturatedBlue);
+    -webkit-box-shadow: 0px 16px 30px -7px var(--desaturatedBlue);
+    -moz-box-shadow: 0px 16px 30px -7px var(--desaturatedBlue);
+}
+
+.image_summary{
+    background: url(./images/illustration-hero.svg);
+    height: 223px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+   
+}
+
+.summary_title{
+    display: flex;
+    margin: 0 auto;
+    font-weight: var(--fontWeightBolder);
+    align-items: flex-start;
+    color: var(--darkBlue);
+    
+}
+
+.summary_text{
+    display: flex;
+    width: 75%;
+    align-items: flex-start;
+    text-align: center;
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeightbold);
+    margin: 0 auto;
+    color: var(--desaturatedBlue);
+    position: relative;
+    top: -10%;
+    transform: translate(top -30%);
+}
+
+
+.order{
+    display: flex;
+    flex-direction: row;
+    background: var(--veryPaleBlue);
+    height: 97px;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 30px;
+    gap: 18px;
+    position: relative;
+    top: -2%;
+}
+
+.order_title{
+    justify-self: flex-start;
+    width: 100%;
+}
+
+.charge_cost{
+    color: var(--desaturatedBlue)
+}
+
+.icon_music{
+    margin-left: 7%;
+}
+
+.change_order{
+    color: var(--darkBlue);
+    margin-right: 7%;
+}
+.order a{
+    font-weight: var(--fontWeightBold);
+}
+
+.payment_buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.proceed_button{
+    height: 50px;
+    width: 350px;
+    margin: 0 auto;
+    background: var(--brightBlue);
+    color: white;
+    font-weight: var(--fontWeightBolder);
+    align-self: flex-end;
+    position: relative;
+    top: -4%;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 16px 30px -7px var(--desaturatedBlue);
+    -webkit-box-shadow: 0px 16px 30px -7px var(--desaturatedBlue);
+    -moz-box-shadow: 0px 16px 30px -7px var(--desaturatedBlue);
+}
+
+.cancel_button{
+    height: 50px;
+    width: 350px;
+    margin: 0 auto;
+    background: transparent;
+    border: none;
+    color: var(--desaturatedBlue);
+    font-weight: var(--fontWeightBolder);
+    align-self: flex-end;
+    position: relative;
+    top: -4%;
+    cursor: pointer;
+}
+
+@media(max-width: 700px){
+    .body{
+        background: url(./images/pattern-background-mobile.svg);
+    }
+}
