@@ -116,7 +116,7 @@ body{
 
 @media(max-width: 700px){
     body{
-        height: 200vh;
+        height: 240vh;
         position: absolute;
     }
     .wrapper{
